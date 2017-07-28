@@ -25,3 +25,7 @@ https://github.com/kellybs1/AbstractRoguelike/tree/master/TerrainCollision
 https://github.com/kellybs1/AbstractRoguelike/blob/master/Abstract%20Roguelike%20Game%20Manual.pdf
 
 ps Press P tp cheat up a level
+
+
+## Notes
+Student project only; contains bugs
