@@ -1,0 +1,17 @@
+﻿  Cell.cpp
+  EnemySprite.cpp
+  Dungeon.cpp
+  GameManager.cpp
+  ItemSprite.cpp
+  Room.cpp
+  Sprite.cpp
+  SpriteList.cpp
+  Tile.cpp
+  TileList.cpp
+  TileMap.cpp
+  Viewport.cpp
+  RogueForm.cpp
+  Generating Code...
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  TerrainCollision.vcxproj -> E:\BIT\y3\projectme\AbstractRoguelike\Debug\ARogueLike.exe
+  TerrainCollision.vcxproj -> E:\BIT\y3\projectme\AbstractRoguelike\Debug\ARogueLike.pdb (Full PDB)
