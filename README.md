@@ -6,8 +6,13 @@ Originally coded for Programming 4, semester 2, 2016.
 
 ## Build
 
-<a href="Builds/AbstractRoguelike.zip">https://github.com/kellybs1/AbstractRoguelike/blob/master/Builds/AbstractRoguelike.zip?raw=true</a>    
+<a href="https://github.com/kellybs1/AbstractRoguelike/blob/master/Builds/AbstractRoguelike.zip?raw=true">Builds/AbstractRoguelike.zip</a>    
 Extract zip, double click exe to play. Folders"maps" and "images" must be in same directory as executable
+
+## Source
+
+https://github.com/kellybs1/AbstractRoguelike/tree/master/TerrainCollision
+
 
 
 ## Screenshot
