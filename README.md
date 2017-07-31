@@ -3,6 +3,8 @@
 A basic roguelike/shooter game with an abstract appearance built in .net Visual C++ on Windows Forms, using Visual Studio 2013 and 2015.    
 Originally coded for Programming 4, semester 2, 2016.
 
+Features: Procedurally generated levels (tilemaps), multiple enemy types, scrolling viewport, pickups.
+
 
 ## Build
 
@@ -24,7 +26,7 @@ https://github.com/kellybs1/AbstractRoguelike/tree/master/TerrainCollision
 
 https://github.com/kellybs1/AbstractRoguelike/blob/master/Abstract%20Roguelike%20Game%20Manual.pdf
 
-ps Press P tp cheat up a level
+ps Press P to cheat up a level
 
 
 ## Notes
