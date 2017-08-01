@@ -1,7 +1,7 @@
 # AbstractRoguelike
 
 A basic roguelike/shooter game with an abstract appearance built in .net Visual C++ on Windows Forms, using Visual Studio 2013 and 2015.    
-Originally coded for Programming 4, semester 2, 2016.
+Originally coded for IN628 Programming 4, semester 2, 2016.
 
 Features: Procedurally generated levels (tilemaps), multiple enemy types, scrolling viewport, pickups.
 
