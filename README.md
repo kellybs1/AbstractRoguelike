@@ -9,7 +9,11 @@ Features: Procedurally generated levels (tilemaps), multiple enemy types, scroll
 ## Build
 
 <a href="https://github.com/kellybs1/AbstractRoguelike/blob/master/Builds/AbstractRoguelike.zip?raw=true">Builds/AbstractRoguelike.zip</a>    
-Extract zip, double click exe to play. Folders"maps" and "images" must be in same directory as executable
+Extract zip, double click exe to play. Folders"maps" and "images" must be in same directory as the executable.
+
+Note: You may need to unblock the executable: Right click the exe -> Properties, and in the bottom section click the Unblock checkbox and then click OK.
+
+<img src="unblock.png">
 
 ## Source
 
