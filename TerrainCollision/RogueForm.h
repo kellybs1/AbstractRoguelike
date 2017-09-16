@@ -146,10 +146,13 @@ namespace TerrainCollision {
 			this->Controls->Add(this->labelHealth);
 			this->Cursor = System::Windows::Forms::Cursors::IBeam;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->HelpButton = true;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
+			this->MinimizeBox = false;
 			this->Name = L"RogueForm";
-			this->Text = L"Abstract Roguelike";
+			this->Text = L"Abstract Roguelike    ---    Press F1 for help";
+			this->HelpButtonClicked += gcnew System::ComponentModel::CancelEventHandler(this, &RogueForm::RogueForm_HelpButtonClicked_1);
 			this->Load += gcnew System::EventHandler(this, &RogueForm::RogueForm_Load);
 			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &RogueForm::RogueForm_KeyDown);
 			this->KeyUp += gcnew System::Windows::Forms::KeyEventHandler(this, &RogueForm::RogueForm_KeyUp);
@@ -247,6 +250,7 @@ namespace TerrainCollision {
 			 labelLevel->Text = levelString;
 	}
 
+	//handle key presses
 	private: System::Void RogueForm_KeyUp(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e)
 	{
 		switch (e->KeyData)
@@ -300,11 +304,14 @@ namespace TerrainCollision {
 			Application::Restart();
 			break;
 
+		case Keys::F1:
+			showHelp();
+			break;
 		}
 
 	}
 
-
+     //handle key releases
 	private: System::Void RogueForm_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) 
 	{
 		switch (e->KeyData)
@@ -328,6 +335,30 @@ namespace TerrainCollision {
 		}
 	}
 
+
+//handle whne help is clicked
+private: System::Void RogueForm_HelpButtonClicked_1(System::Object^  sender, System::ComponentModel::CancelEventArgs^  e)
+{
+	showHelp();
+}
+
+
+//pauses the game, shows controls
+private: System::Void showHelp()
+{
+	timer1->Enabled = false;
+	MessageBox::Show("WASD to Move\n" + 
+					"Arrow keys to shoot\n" + 
+					"N for new game\n" + 
+					"Blue balls are mana\n" +
+					"Red balls are health\n" +
+					"Yellow balls are points\n" +
+					"Black spinner -> next level\n" +
+					"Everything else hurts\n" +
+					"P to cheat to next level", "Help - this is confusing");
+	timer1->Enabled = true;
+	this->Cursor = Cursors::Default; //fix for help cursor
+}
 
 };
 }
